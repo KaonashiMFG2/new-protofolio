@@ -66,13 +66,13 @@ export default function Navbar() {
 
       {/* Socials */}
       <div className="hidden xl:flex gap-3">
-        <a href="#https://www.linkedin.com/in/dharmasena-aji-024765234/">
+        <a href="https://www.linkedin.com/in/dharmasena-aji-024765234/">
           <img src="/icons/linkedin.svg" alt="linkedin" className="w-8" />
         </a>
-        <a href="#https://www.instagram.com/urenunknacdb/">
+        <a href="https://www.instagram.com/urenunknacdb/">
           <img src="/icons/instagram.svg" alt="instagram" className="w-8" />
         </a>
-        <a href="#https://github.com/KaonashiMFG">
+        <a href="https://github.com/KaonashiMFG">
           <img src="/icons/github.svg" alt="github" className="w-8" />
         </a>
       </div>
