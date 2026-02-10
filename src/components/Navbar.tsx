@@ -21,7 +21,7 @@ export default function Navbar() {
   return (
     <nav className="fixed top-0 z-50 flex w-full items-center justify-between bg-[#b78a00] p-2 px-5 shadow-md">
       {/* Title */}
-      <p className="font-rubik font-bold text-black">Dharmasena A.A.</p>
+      <p className="font-rubik font-bold text-black">Dharmasena Akmal Aji</p>
 
       {/* Burger Button */}
       <div className="xl:hidden">
@@ -79,10 +79,18 @@ export default function Navbar() {
 
       {/* Socials */}
       <div className="hidden gap-3 xl:flex">
-        <a href="https://www.linkedin.com/in/dharmasena-aji-024765234/">
+        <a
+          href="https://www.linkedin.com/in/dharmasena-aji-024765234/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <img src="/icons/linkedin.svg" alt="linkedin" className="w-8" />
         </a>
-        <a href="https://www.instagram.com/noumachi_rika/">
+        <a
+          href="https://www.instagram.com/noumachi_rika/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <img src="/icons/instagram.svg" alt="instagram" className="w-8" />
         </a>
         <div onClick={() => setGitHubs(!gitHubs)} className="">
@@ -91,12 +99,13 @@ export default function Navbar() {
             <>
               <div
                 onClick={() => setGitHubs(false)}
-                className="fixed inset-0 z-30"
+                className="fixed inset-0 -z-30"
               ></div>
               <div className="absolute right-1 mt-1 w-48 rounded bg-[#ffc003] shadow-lg">
                 <a
                   href="https://github.com/KaonashiMFG"
                   target="_blank"
+                  rel="noopener noreferrer"
                   className="block rounded px-4 py-2 hover:bg-[#ffd34e]"
                 >
                   KaonashiMFG
@@ -104,6 +113,7 @@ export default function Navbar() {
                 <a
                   href="https://github.com/KaonashiMFG2"
                   target="_blank"
+                  rel="noopener noreferrer"
                   className="block rounded px-4 py-2 hover:bg-[#ffd34e]"
                 >
                   KaonashiMFG2

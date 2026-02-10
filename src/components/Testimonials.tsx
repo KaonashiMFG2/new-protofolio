@@ -13,6 +13,7 @@ export default function Testimonials() {
           Innovative solutions, creative designs, and a passion for excellence
         </p>
 
+        {/* Flex container for testimonials */}
         <div className="mt-10 flex flex-wrap justify-center gap-10">
           {testimonials.map((el) => (
             <div className="flex max-w-64 flex-col items-center gap-7 rounded-lg border border-gray-200 p-10 shadow-lg sm:w-full sm:flex-col lg:w-1/3">
