@@ -69,13 +69,13 @@ export default function Skills() {
         </div>
         {projects.map((el) => (
           <div className="mt-10 grid grid-cols-2 items-center justify-center gap-10 max-xl:grid-cols-1 max-xl:p-10">
-            <div className="overflow-hidden rounded-xl">
+            <a href={el.link} className="overflow-hidden rounded-xl">
               <img
-                src={el.img}
-                alt={el.projectName}
-                className="max-h-60 w-full object-cover"
+              src={el.img}
+              alt={el.projectName}
+              className="max-h-60 w-full object-cover"
               />
-            </div>
+            </a>
             <div className="flex w-[100%] flex-col gap-3">
               <h1 className="text-4xl text-navbar">{el.projectName}</h1>
               <h1 className="text-sm">{el.intro}</h1>

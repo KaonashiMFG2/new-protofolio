@@ -17,11 +17,11 @@ export default function App() {
         <Hero />
       </main>
 
-      <Workexp />
-
       <main className="mx-auto max-w-[950px]">
         <Skills />
       </main>
+
+      <Workexp />
 
       <Testimonials />
 

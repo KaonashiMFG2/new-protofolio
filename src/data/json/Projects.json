@@ -1,14 +1,16 @@
 [
     {
-        "img":"https://i.imgur.com/AJotJH9.png",
-        "projectName":"Dippo",
-        "intro":"the coffe making companion for all, the best place to learn about coffee",
-        "desc":"the project was built by a group of people including myself, i was in charge of the front-end side to match the design given by the designers of the project. furthermore, it has to be interactive with the event of the user. Using the main language of web development (HTML, CSS, ReactJS), I was able to create the desired design in a month"
+        "img":"/projects/rbj.png",
+        "projectName":"Company Profile",
+        "intro":"Rumah Bahasa Jepang",
+        "link":"https://company-profile-codechallange.vercel.app/",
+        "desc":"language learning institution that offers comprehensive courses and resources for individuals interested in mastering the Japanese language. I was responsible for designing and developing the front-end interface, ensuring a user-friendly experience. The project involved creating interactive lessons, quizzes, and a progress tracking system using ReactJS and Tailwind CSS."
     },
     {
-        "img":"https://cdn.dribbble.com/users/851675/screenshots/14233911/media/82b3b0d6bc5fba7767a92b03e519acbb.png",
-        "projectName":"HabbitForge",
-        "intro":"Your personalized habit tracker to build a better routine effortlessly",
-        "desc":"HabbitForge is a web-based application designed to help users develop and maintain habits through daily tracking and motivational insights. I was responsible for building the front-end interface, focusing on simplicity and usability. Using ReactJS and Tailwind CSS, I created dynamic dashboards and implemented interactive features such as progress charts and habit streak notifications. The project was completed within two months and was praised for its clean design and seamless functionality."
+        "img":"/projects/blog.png",
+        "projectName":"Japanese Blog",
+        "intro":"A Blog about Japanese Language and Culture",
+        "link":"https://blog-codechallange.vercel.app/",
+        "desc":"This project is a blog platform dedicated to sharing articles, insights, and resources related to the Japanese language and culture. I developed the front-end using ReactJS and Tailwind CSS, focusing on creating an engaging and visually appealing layout. The blog features categories, tags, and a search functionality to help users easily find content of interest."
     }
 ]

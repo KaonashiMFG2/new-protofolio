@@ -1,5 +1,6 @@
 import { useState } from "react";
-import jetro from "../images/Jetro-1-1170x600.avif";
+// import workexpData from "../data/json/workexp.json";
+import jetro from "/workexp/jetro.jpg";
 
 export default function Workexp() {
   const [showExperience, setShowExperience] = useState(false);
@@ -10,6 +11,14 @@ export default function Workexp() {
       <div className="mt-10 p-4">
         <h1 className="flex items-center justify-center">WORK EXPERIENCE</h1>
 
+        {/* {workexpData.map((el) => (
+          <div className="text-center">
+            <h1 className="text-2xl">{el.companyName}</h1>
+            <h2 className="text-md italic">{el.position}</h2>
+            <img src={el.img} alt={el.companyName} />
+          </div>
+        ))} */}
+
         {/* JETRO Section */}
         <div className="mt-5 flex flex-col items-center gap-5">
           {/* Image Container */}
@@ -17,7 +26,7 @@ export default function Workexp() {
             className="transform overflow-hidden rounded-3xl transition-transform duration-500 hover:animate-pulse hover:cursor-pointer"
             onClick={() => setShowExperience(!showExperience)}
           >
-            <img src={jetro} alt="JETRO" className="w-60 md:w-80" />
+            <img src={jetro} alt="JETRO" className="w-40 md:w-40" />
           </div>
 
           {/* Description Container */}

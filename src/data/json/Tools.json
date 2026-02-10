@@ -15,32 +15,32 @@
   },
 
   {
-    "name": "CSS",
-    "img": "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg"
-  },
-
-  {
     "name": "React",
     "img": "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg"
   },
   {
     "name": "TailwindCSS",
-    "img": "https://tailwindcss.com/_next/static/media/tailwindcss-mark.3c5441fc7a190fb1800d4a5c7f07ba4b1345a9c8.svg"
+    "img": "/icons/tailwind.svg"
   },
 
   {
-    "name": "Next.js",
-    "img": "https://raw.githubusercontent.com/devicons/devicon/master/icons/nextjs/nextjs-original-wordmark.svg"
+    "name": "Next.Js",
+    "img": "/icons/nextjs.svg"
   },
 
   {
-    "name": "Node.js",
+    "name": "Node.Js",
     "img": "https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg"
   },
 
   {
     "name": "MySQL",
     "img": "https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg"
+  },
+  
+  {
+    "name": "Prisma",
+    "img": "/icons/prisma.svg"
   },
 
   {
