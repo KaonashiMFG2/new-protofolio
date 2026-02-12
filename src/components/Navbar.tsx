@@ -93,7 +93,7 @@ export default function Navbar() {
         >
           <img src="/icons/instagram.svg" alt="instagram" className="w-8" />
         </a>
-        <div onClick={() => setGitHubs(!gitHubs)} className="">
+        <div onClick={() => setGitHubs(!gitHubs)} className="cursor-pointer">
           <img src="/icons/github.svg" alt="github" className="w-8" />
           {gitHubs && (
             <>

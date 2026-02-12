@@ -1,60 +1,62 @@
 import { useState } from "react";
-// import workexpData from "../data/json/workexp.json";
-import jetro from "/workexp/jetro.jpg";
+import workexpData from "../data/json/workexp.json";
 
 export default function Workexp() {
-  const [showExperience, setShowExperience] = useState(false);
+  const [activeId, setActiveId] = useState<number | null>(null);
+
+  const toggleExperience = (id: number) => {
+    setActiveId(activeId === id ? null : id);
+  };
 
   return (
     <>
       <div className="h-5" id="workexp"></div>
-      <div className="mt-10 p-4">
-        <h1 className="flex items-center justify-center">WORK EXPERIENCE</h1>
+      <div className="mt-10 flex flex-col items-center gap-10 p-4">
+        <h1 className="mb-8 flex items-center justify-center text-3xl">
+          WORK EXPERIENCE
+        </h1>
 
-        {/* {workexpData.map((el) => (
-          <div className="text-center">
-            <h1 className="text-2xl">{el.companyName}</h1>
-            <h2 className="text-md italic">{el.position}</h2>
-            <img src={el.img} alt={el.companyName} />
-          </div>
-        ))} */}
+        <div className="flex gap-3">
+          {workexpData.map((exp) => (
+            <div key={exp.id} className="flex flex-col items-center gap-5">
+              {/* Image Container */}
+              <div
+                className="transform overflow-hidden rounded-3xl transition-transform duration-500 hover:scale-105 hover:cursor-pointer border-4 border-[#B78A00]"
+                onClick={() => toggleExperience(exp.id)}
+              >
+                <img
+                  src={exp.img}
+                  alt={exp.companyName}
+                  className="h-40 w-40 object-cover md:w-40"
+                />
+              </div>
 
-        {/* JETRO Section */}
-        <div className="mt-5 flex flex-col items-center gap-5">
-          {/* Image Container */}
-          <div
-            className="transform overflow-hidden rounded-3xl transition-transform duration-500 hover:animate-pulse hover:cursor-pointer"
-            onClick={() => setShowExperience(!showExperience)}
-          >
-            <img src={jetro} alt="JETRO" className="w-40 md:w-40" />
-          </div>
-
-          {/* Description Container */}
-          <div
-            className={`overflow-hidden transition-all duration-500 ease-in-out ${
-              showExperience ? "max-h-screen opacity-100" : "max-h-0 opacity-0"
-            }`}
-          >
-            <div className="mt-4 text-center md:text-left">
-              <h1 className="m-3 text-lg">Staff for JETRO Survey Project</h1>
-              <ul className="flex flex-col items-start gap-2">
-                <li>
-                  • Engaged with Japanese companies to encourage survey
-                  participation and ensure representation.
-                </li>
-                <li>
-                  • Managed data entry for survey responses into the JETRO
-                  database using MS Excel and MS Access.
-                </li>
-                <li>
-                  • Coordinated with Indonesian expatriate facilities
-                  (apartments, hotels, schools, industrial parks) to gather
-                  essential relocation information.
-                </li>
-              </ul>
+              {/* Description Container */}
+              <div
+                className={`overflow-hidden transition-all duration-500 ease-in-out ${
+                  activeId === exp.id
+                    ? "max-h-[600px] opacity-100"
+                    : "max-h-0 opacity-0"
+                }`}
+              >
+                <div className="mx-auto mt-4 max-w-2xl rounded-xl border border-white/10 bg-white/5 p-6 text-center backdrop-blur-sm md:text-left">
+                  <h2 className="mb-1 text-center text-2xl font-bold text-[#B78A00]">
+                    {exp.companyName}
+                  </h2>
+                  <h3 className="mb-4 text-center text-lg text-gray-300">
+                    {exp.position}
+                  </h3>
+                  <ul className="flex list-none flex-col items-start gap-2">
+                    {exp.bullets.map((act, index) => (
+                      <li key={index} className="text-left text-gray-200">
+                        • {act}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
             </div>
-            -
-          </div>
+          ))}
         </div>
       </div>
     </>

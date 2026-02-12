@@ -1,14 +1,24 @@
 [
-    {
-        "img":"/workexp/jetro.jpg",
-        "companyName":"JETRO",
-        "position":"Staff for JETRO Survey Project ",
-        "desc":"JETRO"
-    },
-    {
-        "img":"/workexp/abc.aviv",
-        "companyName":"PT Minori",
-        "position":"Japanese Teacher",
-        "desc":"Managed to devise my teaching method around the illustration of Japanese words and streamline the data entry process by using Ms Excel shortcuts. Provide solutions to student’s progress’s problems."
-    }
+  {
+    "id": 1,
+    "img": "/workexp/jetro.jpg",
+    "companyName": "JETRO",
+    "position": "Staff for JETRO Survey Project",
+    "bullets": [
+      "Engaged with Japanese companies to encourage survey participation and ensure representation.",
+      "Managed data entry for survey responses into the JETRO database using MS Excel and MS Access.",
+      "Coordinated with Indonesian expatriate facilities (apartments, hotels, schools, industrial parks) to gather essential relocation information."
+    ]
+  },
+  {
+    "id": 2,
+    "img": "/workexp/minori.png",
+    "companyName": "PT Minori",
+    "position": "Japanese Teacher",
+    "bullets": [
+      "Managed to devise my teaching method around the illustration of Japanese words.",
+      "Streamlined the data entry process by using Ms Excel shortcuts.",
+      "Provide solutions to student’s progress’s problems."
+    ]
+  }
 ]
